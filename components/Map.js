@@ -7,7 +7,6 @@ const Map = ({searchResults}) => {
     const [selectedLocation, setSelectedLocation] = useState({});
 
     // Transform search results object into latitude/longitude
-
     const coordinates = searchResults.map(result => ({
         longitude: result.long,
         latitude: result.lat
