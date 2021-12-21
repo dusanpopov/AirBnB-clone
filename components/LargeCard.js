@@ -15,5 +15,4 @@ const LargeCard = ({img, title, description, buttonText}) => {
         </section>
     )
 }
-
 export default LargeCard
