@@ -86,5 +86,4 @@ const Header = ({placeholder}) => {
         </header>
     )
 }
-
 export default Header
