@@ -28,5 +28,4 @@ const InfoCard = ({img, location, title, description, star, price, total}) => {
         </div>
     )
 }
-
 export default InfoCard
