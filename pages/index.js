@@ -16,6 +16,7 @@ export default function Home({exploreData, cardsData}) {
       <Header />
       <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
+    
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore near by</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -34,6 +35,7 @@ export default function Home({exploreData, cardsData}) {
           </div>
         </section>
         <LargeCard img="https://links.papareact.com/4cj" title="The greatest outdoors" description="Wishlists curated by Airbnb." buttonText="Get inspired"/>
+          
       </main>
       <Footer />
     </div>
