@@ -5,7 +5,6 @@ import { getCenter } from 'geolib';
 const Map = ({searchResults}) => {
 
     const [selectedLocation, setSelectedLocation] = useState({});
-
     // Transform search results object into latitude/longitude
     const coordinates = searchResults.map(result => ({
         longitude: result.long,
@@ -13,7 +12,7 @@ const Map = ({searchResults}) => {
     }))
 
     const centerPoint = getCenter(coordinates);
-
+    
     const [viewport, setViewport] = useState({
         width: "100%",
         height: "100%",
@@ -35,7 +34,6 @@ const Map = ({searchResults}) => {
                     latitude={result.lat}
                     offsetLeft={-20}
                     offsetTop={-10}>
-
                         <p role="img" onClick={() => setSelectedLocation(result)}className="cursor-pointer text-2xl animate-bounce" aria-label="push-pin">
                         📌
                         </p>
@@ -54,5 +52,4 @@ const Map = ({searchResults}) => {
         ))}
     </ReactMapGL>
 }
-
 export default Map
