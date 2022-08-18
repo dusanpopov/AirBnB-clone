@@ -7,7 +7,6 @@ import InfoCard from '../components/InfoCard';
 import Map from "../components/Map";
 
 const Search = ({searchResults}) => {
-
     const router = useRouter();
     const {location, startDate, endDate, numberOfGuests} = router.query;
     const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
